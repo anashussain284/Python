@@ -29,4 +29,5 @@ To explore the problem-solving practices and DSA challenges, follow these steps:
 
 1. **Clone the Repository:**
    git clone https://github.com/anashussain284/Python.git
+2. **Change directory:**
    cd Python
