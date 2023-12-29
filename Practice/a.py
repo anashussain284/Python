@@ -267,9 +267,255 @@
 # thislist[1:2] = ["blackcurrant", "watermelon"]
 # print(thislist)
 
-a = ["a", "b", "c"]
-# a[1:2] = ["x"]
-print(a)
-a.insert(2, "x")
-print(a)
+# a = ["a", "b", "c"]
+# # a[1:2] = ["x"]
+# print(a)
+# a.insert(2, "x")
+# print(a)
 
+# a = ["a", "b", "c"]
+# print(a)
+# a.append("d")
+# print(a)
+# a.insert(15, "e")
+# print(a)
+
+letters = ["a", "b", "c"]
+# numbers = [1, 2, 3]
+# numbers = (1, 2, 3)
+# numbers = {1, 2, 3}
+# print(letters)
+# print(numbers)
+# letters.extend(numbers)
+# # numbers.extend(letters)
+# print()
+# print(letters)
+# print(numbers)
+
+# # a = ["a", "b", "c"]
+# a = {"a", "b", "c"}
+# print(a)
+# # a.remove("a")
+# # a.pop(0)
+# # del a
+# a.clear()
+# print(a)
+
+# a = ["a", "b", "c"]
+# for x in a:
+#     print(x)
+
+# a = range(6)
+# print(a)
+# print(len(a))
+# print()
+# for x in a:
+#     print(x)
+
+a = ["apple", "ball", "cat"]
+# print(a, len(a))
+# print()
+# # for x in a:
+# #     print(x)
+# for i in range(len(a)):
+#     print(a[i])
+
+i = 0
+# while i <= 5:
+#     print(i)
+#     i += 1
+
+# while i < len(a):
+#     print(i, ":", a[i])
+#     i += 1
+
+# [print(x) for x in a]
+# a = ["apple", "banana", "cherry", "kiwi", "mango"]
+# b = []
+# print(a, b)
+
+# for x in a:
+#     # print(x)
+#     if "a" in x:
+#         b.append(x)
+
+# b = [x for x in a if "r" in x]
+# b = [x for x in a if "r" in x]
+# b = [x for x in a if "i" in x]
+# print(a, b)
+
+# newlist = [x for x in fruits]
+# b = [x for x in a]
+# print(a, b)
+
+# a = [x for x in range(10) if x < 5]
+# print(a)
+# a = ["apple", "banana", "cherry", "kiwi", "mango"]
+# b = [x.upper() for x in a]
+# print(a)
+# print(b)
+
+# b = ["*****" for x in a]
+# print(a)
+# print(b)
+
+# b = [x for x in a]
+# b = [x.upper() for x in a]
+# b = ["*" for x in a]
+# b = [x if x != "banana" else 'orange' for x in a]
+# print(a)
+# print(b)
+
+# a = ["orange", "mango", "kiwi", "pineapple", "banana"]
+# a = ["banana", "Orange", "Kiwi", "cherry"]
+# a = [100, 50, 65, 82, 23]
+# print(a)
+# a.sort()
+# a.reverse()
+# a.sort(key = str.lower)
+# a.sort(reverse=True)
+# print(a)
+
+# def myfn(n):
+#     return abs(n - 50)
+
+# a = [100, 50, 65, 82, 23]
+# print(a)
+# a.sort(key = myfn)
+# print(a)
+
+# a = ["z", "a", "z", "b", "z", "c"]
+# a = ["a", "b", "c"]
+# print("b4 :", a)
+# b = a.copy()
+# b = list(a)
+# a.append("d")
+# print(a)
+# print(b)
+# b = ["p", "q", "r"]
+# print("b :", b, "count:")
+# c = a + b
+# print(c)
+
+# for x in b:
+#     # print(x)
+#     a.append(x)
+# print(a)
+
+# a.extend(b)
+# print("a :", a)
+
+# print(a.count(1))
+# print(a.index("z"))
+# a.insert(100, [1, 2, 3, 4])
+
+# a.pop(1)
+# a.pop(-1)
+# a.remove("a")
+# print("a4 :", a)
+
+# a = (1, 2, 3, 4)
+# b = (9)
+# print(a, type(a), len(a), a[0])
+# # print(b, type(b), len(b), b[0])
+# print(b, type(b))
+
+# a = (1, '2', 3)
+# a = tuple((1, 2, 3))
+# b = ("a", "b", "c")
+# c = (True, False, True, False)
+# d = (1, "a", True)
+
+# print(a, type(a))
+# b = a[-1]
+# print(b, type(b))
+# print(b, type(b))
+# print(c, type(c))
+# print(d, type(d))
+
+# a = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+# print(a)
+# print(a[::-1])
+
+# if '1' in a:
+#     print("Yes")
+# else:
+#     print("No")
+
+# a = (1, 2, 3)
+# print("b4", a)
+
+# # a[0] = 10
+# # b = list(a)
+# # b.remove(3)
+# # a = tuple(b)
+# # a += (10, 99)
+# del a
+
+# print("a4", a)
+
+# fruits = ("apple", "banana", "cherry")
+# fruits = ["apple", "banana", "cherry"]
+# fruits = {"apple", "banana", "cherry"}
+# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry", "orange")
+# print(fruits)
+# print()
+
+# (green, *yellow, red, rose) = fruits
+
+# print(green)
+# print(yellow)
+# print(red)
+# print(rose)
+
+# for x in fruits:
+#     print(x)
+
+# for i in range(len(fruits)):
+#     print(fruits[i])
+
+# i = 0
+
+# while i < len(fruits):
+#     print(fruits[i])
+#     i += 1
+
+# a = (1, 2, 3, 1, 1)
+# b = ("a", "b", "c")
+# c = a + b
+
+# print(a)
+# print(b)
+# print(c)
+# d = a * 3
+# print(d)
+
+# print(a.index(3))
+# print(a.count(10))
+
+a = {"a", "b", "c", 1, 2, 3, 3, 3, 3, 3, 3}
+# b = {True, False, 0}
+# print(len(a), len(b))
+
+# a = {1, 2, 3}
+# b = {"a", "b", "c"}
+# c = {True, False}
+# d = {1, "2", False}
+
+# print("a:", a, type(a))
+# print("b:", b, type(b))
+# print("c:", c, type(c))
+# print("d:", d, type(d))
+
+# a = list(("a", "b", "c"))
+# b = tuple(("a", "b", "c"))
+# c = set(("a", "b", "c"))
+
+# print("a:", a, type(a))
+# print("b:", b, type(b))
+# print("c:", c, type(c))
+
+# for x in a:
+#     print(x)
+
+print("ab" in a)
