@@ -280,7 +280,7 @@
 # a.insert(15, "e")
 # print(a)
 
-letters = ["a", "b", "c"]
+# letters = ["a", "b", "c"]
 # numbers = [1, 2, 3]
 # numbers = (1, 2, 3)
 # numbers = {1, 2, 3}
@@ -312,7 +312,7 @@ letters = ["a", "b", "c"]
 # for x in a:
 #     print(x)
 
-a = ["apple", "ball", "cat"]
+# a = ["apple", "ball", "cat"]
 # print(a, len(a))
 # print()
 # # for x in a:
@@ -320,7 +320,7 @@ a = ["apple", "ball", "cat"]
 # for i in range(len(a)):
 #     print(a[i])
 
-i = 0
+# i = 0
 # while i <= 5:
 #     print(i)
 #     i += 1
@@ -493,7 +493,9 @@ i = 0
 # print(a.index(3))
 # print(a.count(10))
 
-a = {"a", "b", "c", 1, 2, 3, 3, 3, 3, 3, 3}
+# a = {"a", "b", "c"}
+# b = {1, 2, 3}
+# a = ("a", "b", "c", 1, 2, 3, 3, 3, 3, 3, 3)
 # b = {True, False, 0}
 # print(len(a), len(b))
 
@@ -518,4 +520,195 @@ a = {"a", "b", "c", 1, 2, 3, 3, 3, 3, 3, 3}
 # for x in a:
 #     print(x)
 
-print("ab" in a)
+# print("ab" in a)
+# print(a)
+
+# for x in a:
+#     print(x)
+# b = 1
+# a.add(b)
+# print(a)
+# print(a, "id:", id(a))
+# a.update(b)
+# print(b)
+# print(a, "id:", id(a))
+
+
+# a = {"a", "b", "c", True}
+# b = {"p", "q", "r", "a", "b", "c", 1}
+# b = {1}
+# b = [1]
+# b = (1,)
+# print("before")
+# print("a:",a, "id:", id(a))
+# print("b:",b, "id:", id(b))
+# a.add("1")
+# a.update(b)
+# b.update(a)
+# a.intersection_update(b)
+# a.union(b)
+# b.union(a)
+# a.remove('a')
+# a.discard(1)
+# a.clear()
+# del a
+# print()
+# print("after")
+# print("a:",a, "id:", id(a))
+# print("b:",b, "id:", id(b))
+
+# print()
+# print("Union")
+# print(a.union(b))
+
+# print()
+# print("Intersection")
+# print(a.intersection(b))
+# print()
+# print("Symmetric difference")
+# print(a.symmetric_difference(b))
+
+# a = {1, 2, 3}
+# print(a)
+# a.add("a")
+# print(a)
+# a.clear()
+
+# a = {
+#     "Name": "Anas",
+#     "Place": "cochi",
+#     "Year": 2024
+# }
+
+# a = dict(name = "Anas", place = "Cochi", name = "Anas")
+
+# print(a, type(a), id(a), len(a))
+# b = a.get("Name")
+# print(b, type(b), id(b), len(b))
+# k = a.keys()
+# print(k)
+# v = a.values()
+# print(v)
+
+# for x in a.values():
+#     print(x)
+
+# a["Laptop"] = "HP"
+# print(a, type(a), id(a), len(a))
+# a.update({"Laptop": "HP2"})
+# a.update({"Name": 2024})
+# a.update({"a": "b"})
+# a.pop("Name")
+# a.popitem()
+# del a["Name"]
+# del a
+# a.clear()
+# print(a, type(a), id(a), len(a))
+
+# c = a.items()
+# print(c, type(c), id(c), len(c))
+
+# for x in a.items():
+#     print(x[0], ":", x[1])
+
+# if "name" in a:
+#     print("Yes")
+# else:
+#     print("No")
+
+# a = {
+#     "Name": "Anas",
+#     "Place": "Cochi",
+#     "Year": 2024
+# }
+# print(a, id(a))
+# b = a
+# b = a.copy()
+# b = dict(a)
+# a["Name"] = 1
+# print(b, id(b))
+
+# for x in a:
+#     # print(x)
+#     print(a[x])
+
+# for x in a.values():
+    # print(x)
+# for x in a.keys():
+#     print(x)
+
+# for key, value in a.items():
+#     print(key, ":", value)
+
+# a = {
+#   "child1" : {
+#     "name" : "Emil",
+#     "year" : 2004
+#   },
+#   "child2" : {
+#     "name" : "Tobias",
+#     "year" : 2007
+#   },
+#   "child3" : {
+#     "name" : "Linus",
+#     "year" : 2011
+#   }
+# }
+# print(a, len(a["child1"]))
+
+# a = {
+#     "A": "A"
+# }
+# b = {
+#     "B": "B"
+# }
+# c = {
+#     "C": "Anas"
+# }
+# z = {
+#     "a": a,
+#     "b": b,
+#     "c": c,
+# }
+
+# print(z, len(z))
+# print(z["c"]["C"])
+
+# if "Anas" in z["c"]["C"]:
+#     print(True)
+# else:
+#     print(False)
+
+# a = {
+#     "Name": "Anas",
+#     "Place": "Cochi",
+#     "Year": 2024
+# }
+
+# print(a, id(a))
+# a.clear()
+# b = a.copy()
+# print(a, id(a))
+# print(b, id(b))
+
+# a = ("a", "b", "c")
+# c = a
+# print(a, type(a), id(a))
+# b = dict.fromkeys(a, c)
+# # b = dict.fromkeys(a, c)
+# print(b, type(b), id(b))
+
+# print(a.get("Year"))
+
+# a = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# print(a, type(a))
+
+# b = a.setdefault("model2")
+
+# print(b, type(b))
+# print(a)
