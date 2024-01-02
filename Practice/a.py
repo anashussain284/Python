@@ -712,3 +712,46 @@
 
 # print(b, type(b))
 # print(a)
+
+a = 5
+# if a > 0:
+#   print("+ve")
+# elif a < 0:
+#   print("-ve")
+# else:
+#   print("0")
+
+# print("T") if 1 > 2 else print("F")
+
+
+# print("+ve") if a > 0 else print("-ve")
+
+# print("+ve") if a > 0 else print("-ve") if a < 0 else print("0")
+
+# print("1") if a == 1 else print("2") if a == 2 else print("3") if a == 3 else print(4) if a == 4 else print("! in the list")
+
+# if 1 > 0 and 2 > 0:
+#     print("Both R T")
+
+# if 1 > 0 or 2 > 0:
+#     print("both / one is T")
+
+# if not 1 > 2:
+#     print("T")
+# else:
+#     print("F")
+
+a = 10
+
+# if (a > 5):
+#   print("above 5")
+#   if (a > 10):
+#     print("above 10")
+#   else:
+#     print("blow 10")
+# else:
+#   print("below 5")
+
+if 10 > 2:
+    # print("T")
+    pass
