@@ -713,7 +713,7 @@
 # print(b, type(b))
 # print(a)
 
-a = 5
+# a = 5
 # if a > 0:
 #   print("+ve")
 # elif a < 0:
@@ -741,7 +741,7 @@ a = 5
 # else:
 #     print("F")
 
-a = 10
+# a = 10
 
 # if (a > 5):
 #   print("above 5")
@@ -752,6 +752,6 @@ a = 10
 # else:
 #   print("below 5")
 
-if 10 > 2:
+# if 10 > 2:
     # print("T")
-    pass
+    # pass
