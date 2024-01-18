@@ -255,7 +255,122 @@
 # print(txt.encode(encoding="ascii", errors="replace"))
 # print(txt.encode(encoding="ascii", errors="xmlcharrefreplace"))
 
-txt = "0123456789, welcome to my world."
-x = txt.endswith("4", 2, 5)
-print(txt)
-print(x)
+# txt = "0123456789, welcome to my world."
+# x = txt.endswith("4", 2, 5)
+# print(txt)
+# print(x)
+
+# print(1 > 2)
+# print(2 > 1)
+# print(1 == 1)
+
+# print(bool("Hello"))
+# print(bool(""))
+# print(bool(10))
+# print(bool(0))
+
+# print(bool([1, 2, 3]))
+# print(bool((1,2,3,)))
+# print(bool({1, 2, 3}))
+# print(bool(None))
+
+# class my_class():
+#     def __len__(self):
+#         return 0
+    
+# myobj = my_class()
+# print(bool(myobj))
+
+# print(bool(False))
+
+# class myClass():
+#     def __len__(self):
+#         return 0
+    
+# myobj = myClass()
+# print(bool(myobj))
+
+# def myFunction():
+#     return True
+
+# # print(myFunction())
+
+# if myFunction():
+#     print("Yes")
+# else:
+#     print("No")
+
+# x = 1.0
+# print(isinstance(x, float))
+
+# a = []
+# print(isinstance(a, list))
+
+# a = ""
+# print(isinstance(a, str))
+
+# a = ()
+# print(isinstance(a, tuple))
+
+# a = {1,2,3}
+# print(isinstance(a, set))
+
+# a = {"name": "anas"}
+# print(isinstance(a, dict))
+
+# a = 10
+# b = 4
+
+# print("a % b =", a % b)
+# print("a / b =", a / b)
+
+# print(a ** b)
+
+# a = 1
+# print(a)
+# a += 1
+# print(a)
+# a -= 1
+# print(a)
+
+# print(not(1 > 0 and 2 > 3))
+
+# a = ["a", "b"]
+# b = ["a", "b"]
+# c = a
+
+# print("a:", a, id(a), type(a))
+# print("b:", b, id(b), type(b))
+# print("c:", c, id(c), type(c))
+
+# print()
+
+# print("a is b:", a is b)
+# print("a is c:", a is c)
+# print("c is a:", c is a)
+
+# print()
+
+# print("a is b:", a == b)
+# print("a is c:", a == c)
+# print("c is a:", c == a)
+
+# print()
+
+# print("a is not b:", a is not b)
+# print("a is not c:", a is not c)
+# print("c is not a:", c is not a)
+
+# print()
+
+# print("a is not b:", a != b)
+# print("a is not c:", a != c)
+# print("c is not a:", c != a)
+
+# a = ["a", "b", "c"]
+# print("a" in a)
+# print("z" not in a)
+
+# print(100 + 5 * 3)
+
+# print(6 & 3)
