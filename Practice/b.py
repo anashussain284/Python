@@ -374,3 +374,33 @@
 # print(100 + 5 * 3)
 
 # print(6 & 3)
+
+# a = [1, 2, 3, "a", 1, 2, 2]
+# a = list(("a", "b", "c"))
+# print(a, type(a), id(a))
+# print(a[0])
+# print(len(a))
+
+# a = ["a", "b", "c", "d", "e", "f", "g"]
+# a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(a)
+# print(a[0])
+# print(a[-1])
+# print(a[-2])
+# print(a[2::])
+# print(a[-5:-2:2])
+# print(a)
+# a[1:3] = [11, 33, 44]
+# print(a)
+
+# thislist = ["apple", "banana", "cherry"]
+# print(id(thislist))
+# thislist[1:2] = ["blackcurrant", "watermelon"]
+# print(thislist)
+# print(id(thislist))
+
+# a = [1, 2, 3]
+# print(a)
+# a.insert(-20, 4)
+# print(a)
+
