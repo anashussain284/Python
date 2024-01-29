@@ -308,6 +308,38 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 # print(x)
 # print(x*2)
 
-x = (1, 3, 7, 18, 7, 5, 4, 6, 8, 5)
-print(x.count(5))
-print(x.index(8))
+# x = (1, 3, 7, 18, 7, 5, 4, 6, 8, 5)
+# print(x.count(5))
+# print(x.index(8))
+
+# x = {0, 1, "a", True, False, 0, "a", 2, 3, 1}
+# print(x, len(x))
+# print(isinstance(x, set))
+# for y in x:
+#     print(y)
+
+# for y in x:
+#     print(y)
+
+# print(20 in x)
+
+# x = {1, 2, 3}
+# print(x, id(x))
+# x.add(99)
+# print(x, id(x))
+# y = (11, 22, 33)
+# x.update(y)
+# x.update(99)
+# x.clear()
+# del x
+# print(x, id(x))     
+# y = {"a", "b", "c", 1}
+# x.update(y)
+
+# z = x.symmetric_difference(y)
+# x.symmetric_difference_update(y)
+
+# print(x)
+# print(y)
+# print(z)
+
