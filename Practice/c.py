@@ -343,3 +343,103 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 # print(y)
 # print(z)
 
+# x = {
+#     "name": "Anas",
+#     "place": "ekm",
+#     "year": "2024",
+#     "profession": "IT"
+# }
+# x["test"] = "Pqr"
+
+# print(len(x), x)
+# print()
+# print(x["name"])
+# print(x.get("name"))
+# print(x.keys())
+# print(x.values())
+# print()
+# print(x.items())
+# print()
+# print("Name" in x)
+# print()
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict)
+# # thisdict.update({"year": 2020, "brand":"pqr"})
+# thisdict.update(dict(("name""anas")))
+# print()
+# print(thisdict)
+# x.pop("name")
+# x.popitem()
+# del x["abc"]
+# del x
+# x.clear()
+# print(len(x), x)
+
+# for y in x:
+#     print(y, x[y])
+
+# for y in x.keys():
+#     print(y)
+
+# for y in x.values():
+#     print(y)
+
+# for y, z in x.items():
+#     print(y, z)
+
+# x = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# print(id(x), x)
+# # y = x
+# # y = x.copy()
+# y = dict(x)
+# print(id(y), y)
+
+# family = {
+#     "child1": {
+#         "name": "child1_name",
+#         "place": "child1_place",
+#         "age": "child1_age"
+#     },
+#     "child2": {
+#         "name": "child2_name",
+#         "place": "child2_place",
+#         "age": "child2_age"
+#     },
+#     "child3": {
+#         "name": "child3_name",
+#         "place": "child3_place",
+#         "age": "child3_age"
+#     }
+# }
+
+# print(family)
+# print()
+# print(family["child1"]["name"])
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# x = car.setdefault("model2", "Bronco")
+
+# print(x)
+
+# x = ("key1", "key2", "key3")
+# y = {1}
+# z = dict.fromkeys(x, y)
+
+# print(x)
+# print(y)
+# print(z)
