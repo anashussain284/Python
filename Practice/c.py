@@ -814,28 +814,127 @@ def intersection_2(nums1, nums2):
 # result = intersection_2(nums1, nums2)
 # print(result)
 
-def intersection_3(nums1, nums2):
-    result = []
-    i = 0
-    j = 0
-    nums1.sort()
-    nums2.sort()
+# def intersection_3(nums1, nums2):
+#     result = []
+#     i = 0
+#     j = 0
+#     nums1.sort()
+#     nums2.sort()
 
-    while i < len(nums1) and j < len(nums2):
-        if nums1[i] == nums2[j]:
-            if len(result) == 0:
-                result.append(nums1[i])
-            else:
-                if result[-1] != nums1[i]:
-                    result.append(nums1[i])
-            i += 1
-            j += 1
-        else:
-            if nums1[i] < nums2[j]:
-                i += 1
-            else:
-                j += 1
-    return result
+#     while i < len(nums1) and j < len(nums2):
+#         if nums1[i] == nums2[j]:
+#             if len(result) == 0:
+#                 result.append(nums1[i])
+#             else:
+#                 if result[-1] != nums1[i]:
+#                     result.append(nums1[i])
+#             i += 1
+#             j += 1
+#         else:
+#             if nums1[i] < nums2[j]:
+#                 i += 1
+#             else:
+#                 j += 1
+#     return result
 
-result = intersection_3(nums1, nums2)
+# result = intersection_3(nums1, nums2)
+# print(result)
+
+# def divide(a, b):
+#     quotient = a // b
+#     reminder = a % b
+#     return (quotient, type(quotient), reminder, type(reminder))
+
+# result = divide(10, 3)
+# print(result)
+# from sys import getsizeof
+
+# x = [1, 2, 1, 3, 2]
+# print(len(x), type(x), x, id(x), getsizeof(x))
+# y = set(x)
+# print(len(y), type(y), y, id(y), getsizeof(y))
+# z = list(y)
+# print(len(z), type(z), z, id(y), getsizeof(y))
+
+# def contains_duplicate(nums):
+    # seen = set()
+    # for num in nums:
+    #     if num in seen:
+    #         return True
+    #     seen.add(num)
+    # return False
+    # x = len(nums)
+    # y = len(set(nums))
+    # if x != y:
+    #     return True
+    # else:
+    #     return False
+
+# list1 = [1, 2, 3, 4, 5]
+# result = contains_duplicate(list1)
+# print(result)
+
+# def intersection(nums1, nums2):
+#     s1 = set(nums1)
+#     s2 = set(nums2)
+
+#     return [x for x in s1 if x in s2]
+
+# nums1 = [1, 2, 3, 4]
+# nums2 = [5, 6, 7, 8]
+# result = intersection(nums1, nums2)
+# print(result)
+
+# numbers = [1, 2, 3, 1, 2, 3, 4, 5, 1, 3, 1, 2, 3, 7, 1, 9, 10]
+# counts = {}
+
+# for n in numbers:
+#     # print(n)
+#     if n in counts:
+#         counts[n] += 1
+#     else:
+#         counts[n] = 1
+
+# print(counts)
+
+# def two_sum(nums, target):
+#     a = []
+#     for i in range(len(nums)):
+#         for j in range(i + 1, len(nums)):
+#             if (nums[i] + nums[j] == target):
+#                 a.append(i)
+#                 a.append(j)
+#                 break
+#     return a
+
+# # nums = [2, 7, 11, 15]; target = 9
+# nums = [3, 2, 4]; target = 6
+
+# result = two_sum(nums, target)
+# print(result)
+"""
+def majority_element(nums):
+    count = 0
+    candidate = None
+
+    for num in nums:
+        if count == 0:
+            candidate = num
+
+        count += (1 if num == candidate else -1)
+    
+    return candidate
+
+nums = [3, 2, 3]
+result = majority_element(nums)
 print(result)
+"""
+
+import math
+import d
+
+x = math.sqrt(9)
+# print(x)
+
+y = random.randfloat(1, 10)
+print(y)
