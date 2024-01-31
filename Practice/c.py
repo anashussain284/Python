@@ -443,3 +443,399 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 # print(x)
 # print(y)
 # print(z)
+
+# x = 0
+
+# if x > 0:
+#     print(x, "is +ve")
+# elif x < 0:
+#     print(x, "is -ve")
+# else:
+#     print(x, "is zero")
+
+# if 11 > 2: print("T")
+
+# print("T") if 11 > 12 else print("F")
+
+# x = 4
+
+# print(1) if x == 1 else print(2) if x == 2 else print(3) if x == 3 else print("None")
+
+# if not 1 > 2:
+#     print("T")
+
+x = 9
+
+# if x > 10:
+#     print(x, "is bigger than 10")
+
+#     if x > 20:
+#         print(x, "is bigger than 20")
+
+#         if x > 30:
+#             print(x, "is greater than 30")
+#         else:
+#             print(x, "is less than 30")
+#     else:
+#         print(x, "is lower than 20")
+# else:
+#     print(x, "is lower than 10")
+
+# if 1 < 2:
+#     pass
+
+# i = 0
+
+# while (i <= 5):
+    
+#     if (i == 3):
+#         # break
+#         continue
+
+#     print(i)
+#     i+=1
+
+# i = 0
+# while i < 6:
+#   i += 1
+#   if i == 3:
+#     continue
+#   print(i)
+# else:
+#   print("loop condition is false")
+
+# for i in range(0, 10, 2)    :
+#     print(i)
+# else:
+#     print("loop is finished")
+
+# x = [1, 2, 3]
+# y = ["a", "b", "c"]
+
+# for a in x:
+#     # for b in y:
+#     #     print(a, b)
+#     pass
+
+# def print_name(*fname):
+#     print(fname[0], "Hussain")
+
+# # print_name("Anas")
+# # print_name("Aisha")
+    
+# names = ["Anas", "Aisha", "Nazeer", "Muhammed"]
+
+# for i in names:
+#     print_name(i)
+
+# def my_function(*kids):
+#   print("The youngest child is " + kids[0])
+
+# my_function("Emil", "Tobias", "Linus")
+
+# print_name("A", "B", "C")
+
+# def my_function(**abc):
+#     print("selected:", abc["place"])
+#     # print("selected:", abc[0])
+
+# # pqr = ()
+# my_function(name = "anas", place="cochin")
+# # my_function("a", "b", "c")
+
+# def test_fn(name = "Nil"):
+#     print("Hello", name)
+
+# test_fn("Anas")
+# test_fn()
+
+# def test_fn(letters):
+#     for i in letters:
+#         return i
+
+# letters = ("A", "B", "C")        
+
+# x = test_fn(letters)
+# print(x)
+
+# def my_fun(*, x):
+#     print(x)
+
+# my_fun(x = 5)
+
+# def tri_recursion(k):
+#     if (k > 0):
+#         result = k + tri_recursion(k - 1)
+#         print(result)
+#     else:
+#         result = 0
+#     return result
+
+# print("Recursion example")
+# tri_recursion(2)
+
+# lambda arguments : expression
+# x = lambda a : a + 10
+# print(x(5))
+
+# s = lambda a, b, c, d : a + b + c + d
+# print(s(1, 2, 3, 4))
+
+# def my_func(n):
+#     return lambda a : a * n
+
+# my_doubler = my_func(3)
+
+# print(my_doubler(22))
+
+# def my_func(n):
+#     return lambda a : a * n
+
+# my_doubler = my_func(2)
+# my_trippler = my_func(3)
+
+# print(my_doubler(11))
+# print(my_trippler(11))
+
+# class MyClass:
+#     x = 5
+
+# x = MyClass()
+# print(x.x)
+
+# name = input("Enter your name:")
+# place = input("Where are you coming from?")
+
+# print(name, "from", place)
+
+# try:
+#     num = float(input("Enter a no:"))
+# except ValueError:
+#     print("Invalid input. Please a valid number.")
+
+# age = 111
+# has_license = False
+
+# if age >= 18 and has_license:
+#     print("U R allowed to drive")
+# elif age >= 18 and not has_license:
+#     print("U need a license to drive")
+# else:
+#     print("U R Not old enough to drive")
+
+# matrix = [
+#     [7, 8, 9],
+#     [1, 2, 3],
+#     [4, 5, 6],
+    
+# ]
+
+# # print(matrix)
+# for row in matrix:
+#     # print(row)
+#     for col in row:
+#         print(col)
+
+# number = 64
+# found_divisor = False
+
+# for i in range(2, number):
+#     # print(i)
+#     if found_divisor:
+#         break
+#     for j in range(2, number):
+#         # print(j)
+#         # pass
+#         if i * j == number:
+#             print("the 1st occurrance for {number} are {i} and {j}")
+#             found_divisor = True
+#             break
+
+# number = 64
+# found_divisor = False
+
+# for i in range(2, number):
+#     if found_divisor:
+#         break
+#     for j in range(2, number):
+#         if i * j == number:
+#             print(f"The first pair of divisor for {number} are {i} and {j}.")
+#             found_divisor = True
+#             break
+
+# def power(base, exponent = 2):
+#     return base ** exponent
+
+# print(power(3))
+# print(power(4))
+
+# def two_sum(nums, target):
+#     for i in range(len(nums)):
+#         num1 = nums[i]
+
+#         for j in range(i + 1, len(nums)):
+#             num2 = nums[j]
+
+#             if num1 + num2 == target:
+#                 return [i, j]
+            
+# list1 = [2, 10, 9, 20, 5, 7]            
+# result = two_sum(list1, 11)
+# if (result == None):
+#     result = "Target not found"
+# print(result)
+
+# def contains_duplicate(nums):
+#     n = len(nums)
+#     for i in range(n - 1):
+#         for j in range(i + 1, n):
+#             if nums[i] == nums[j]:
+#                 return True
+#     return False
+
+# list1 = [1, 2, 3, 4]
+# result = contains_duplicate(list1)
+# print(result)
+
+# def duplicate2(nums):
+#     nums.sort()
+#     n = len(nums)
+#     for i in range(1, n):
+#         # print(i, nums[i], nums[i - 1])
+#         if nums[i] == nums[i - 1]:
+#             return True
+#     return False
+
+# list2 = [1, 2, 3, 1]
+# result = duplicate2(list2)
+# print(result)
+
+# def duplicate3(nums):
+#     seen = set()
+#     for num in nums:        
+#         if num in seen:
+#             return True
+#         seen.add(num)    
+#         print(seen)    
+#     return False
+
+# list3 = [1, 2, 3, 4]
+# result = duplicate3(list3)
+# print(result)
+
+# str1 = "Hello world man"
+# print(type(str1), str1)
+# tuple1 = str1.partition("wo")
+# print(type(tuple1), tuple1)
+
+# x = "    banana     "
+# y = x.strip()
+
+# print(x)
+# print(y)
+# print("of all fruits", y, "is my favorite")
+
+# def find_left_sum(nums, i):
+#     sum = 0
+#     for j in range(0, i):
+#         sum += nums[j]
+#     return sum
+
+
+# def find_right_sum(nums, i):
+#     sum = 0
+#     for j in range(i + 1, len(nums)):
+#         sum += nums[j]
+#     return sum
+
+# def pivot_index(nums):
+#     for i in range(0, len(nums)):
+#         left_sum = find_left_sum(nums, i)
+#         right_sum = find_right_sum(nums, i)
+
+#         if left_sum == right_sum:
+#             return i
+#     return -1
+
+# list1 = [1, 7, 3, 6, 5, 6]
+# # list1 = [1, 2, 3]
+# # list1 = [2, 1, -1]
+# result = pivot_index(list1)
+# # print(result)
+
+# def pivot_index_2(nums):
+#     s = sum(nums)
+#     left_sum = 0    
+    
+#     for i, x in enumerate(nums):        
+#         calc = s - left_sum - x
+#         print("left_sum:", left_sum, ", sum:", s, ", calc:", calc)
+#         if left_sum == calc:
+#             return i
+#         left_sum += x
+#     return -1
+
+# result = pivot_index_2(list1)
+# print(result)
+
+def intersection_1(nums1, nums2):
+    ans = []
+    for i in nums1:
+        if (i in nums2):
+            if (not i in ans):
+                ans.append(i)
+    return ans
+
+# nums1 = [1, 2, 2, 1]; nums2 = [2, 2]
+nums1 = [4, 9, 5]; nums2 = [9, 4, 9, 8, 4]
+# result = intersection_1(nums1, nums2)
+# print(result)
+
+def intersection_2(nums1, nums2):
+    result = list()
+    unique_nums1 = list()
+
+    for i in nums1:
+        if not i in unique_nums1:
+            unique_nums1.append(i)
+
+    unique_nums2 = list()
+
+    for j in nums2:
+        if not j in unique_nums2:
+            unique_nums2.append(j)
+
+    for k in unique_nums1:
+        if k in unique_nums2:
+            result.append(k)
+
+    return result
+
+# result = intersection_2(nums1, nums2)
+# print(result)
+
+def intersection_3(nums1, nums2):
+    result = []
+    i = 0
+    j = 0
+    nums1.sort()
+    nums2.sort()
+
+    while i < len(nums1) and j < len(nums2):
+        if nums1[i] == nums2[j]:
+            if len(result) == 0:
+                result.append(nums1[i])
+            else:
+                if result[-1] != nums1[i]:
+                    result.append(nums1[i])
+            i += 1
+            j += 1
+        else:
+            if nums1[i] < nums2[j]:
+                i += 1
+            else:
+                j += 1
+    return result
+
+result = intersection_3(nums1, nums2)
+print(result)
