@@ -928,7 +928,7 @@ def majority_element(nums):
 nums = [3, 2, 3]
 result = majority_element(nums)
 print(result)
-"""
+
 
 import math
 import d
@@ -938,3 +938,128 @@ x = math.sqrt(9)
 
 y = random.randfloat(1, 10)
 print(y)
+
+
+class MyClass:
+    x = 5
+
+# print(MyClass)
+m = MyClass
+print(m.x)
+
+
+class Person:
+    def __init__(self, name, age, place):
+        self.name = name
+        self.age = age 
+        self.place = place
+
+    def __str__(self):
+        return f"{self.name} from {self.place} is {self.age} years old"
+    
+    def intro(self):
+        print("Hello my name is", self.name)
+
+    def test(abc):
+        print("Hello", abc.name)
+
+P1 = Person("Anas", 26, "Cochi")
+P2 = Person("Aisha", 22, "Cochin")
+# print(P1.name, P1.age)
+# print(P1)
+P1.intro()
+P1.test()
+print()
+del P1.name
+del P1
+P1.name = "ANAS222"
+
+P1.intro()
+
+# import d as test_module
+# from d import P1
+import d
+import platform
+
+print(d.P1['name'])
+
+
+
+def intersection(nums1, nums2):
+    result = []
+    i = 0
+    j = 0
+    nums1.sort()
+    nums2.sort()
+
+    while i < len(nums1) and j < len(nums2):
+        if nums1[i] == nums2[j]:
+            if len(result) == 0:
+                result.append(nums1[i])
+            else:
+                if result[-1] != nums1[i]:
+                    result.append(nums1[i])
+            i += 1
+            j += 1
+        else:
+            if nums1[i] < nums2[j]:
+                i += 1
+            else:
+                j += 1
+    return result
+
+# nums1 = [1, 2, 2, 1]; nums2 = [2, 2]
+nums1 = [4, 9, 5]; nums2 = [9, 4, 9, 8, 4]
+x = intersection(nums1, nums2)
+# print(x)
+
+
+
+# def my_own_join(l1):
+#     str1 = ""
+#     for i in range(0, len(l1)):
+#         if (i != 0):
+#             str1 = str1 + " " + l1[i]
+#         else:
+#             str1 = str1 + l1[i]
+#     return str1
+
+# x = my_own_join("the sky is blue".split())
+# print(x)
+
+# a = "Hello world"
+# print(a)
+# b = a.split(" ")
+# print(b)
+
+def reverse_word(string):
+    l1 = string.split(" ")
+    l1.reverse()
+    s2 = " ".join(l1)
+    return s2
+
+x = reverse_word("the sky is blue")
+print(x)
+
+def first_(haystack, needle):
+    # return haystack.find(needle)
+    for i in range(len(haystack) - len(needle) + 1):
+        if haystack[i:i + len(needle)] == needle:
+            return i
+    return -1
+
+x = first_("anas anu", "u")
+# print(x)
+
+def a(h, n):
+    for i in range(len(h) - len(n) + 1):
+        # print(i)
+        x = h[i:i+len(n)]
+        if x == n:
+            return i
+
+x = a("anas anu", "u")
+print(x)
+
+"""
+
