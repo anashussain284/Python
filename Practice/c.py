@@ -1,4 +1,6 @@
-import random
+"""
+
+# import random
 
 # print("Hello world")
 
@@ -464,7 +466,7 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 # if not 1 > 2:
 #     print("T")
 
-x = 9
+# x = 9
 
 # if x > 10:
 #     print(x, "is bigger than 10")
@@ -912,7 +914,7 @@ def intersection_2(nums1, nums2):
 
 # result = two_sum(nums, target)
 # print(result)
-"""
+
 def majority_element(nums):
     count = 0
     candidate = None
@@ -1061,5 +1063,484 @@ def a(h, n):
 x = a("anas anu", "u")
 print(x)
 
+
+greet = lambda : print("Hello world")
+
+greet
+
+
+class Person:
+    def __init__(self, fname, lname):
+        self.fname = fname.capitalize()
+        self.lname = lname.capitalize()
+
+    def printname(self):
+        print("Hello", self.fname, self.lname)
+
+x = Person("anas", "hussain")
+# x.printname()
+
+class Student(Person):
+    # pass
+    def __init__(self, fname, lname, year):
+        super().__init__(fname, lname)
+        self.graduation_year = year
+
+    def welcome(self):
+        print(f"welcome {self.fname} {self.lname} to the class of {self.graduation_year}")
+
+y = Student("aisha", "hussain", 2018)
+y.printname()
+print(y.graduation_year)
+y.welcome()
+
+
+# x = (1, 2, 3, 4, 5)
+x = "Hello world"
+# print(x, type(x))
+y = iter(x)
+# print(y, type(y))
+
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+
+# x = "hello"
+
+# for y in x:
+#     print(y)
+
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
+
+  def __next__(self):
+    x = self.a
+    self.a += 1
+    return x
+
+myclass = MyNumbers()
+myiter = iter(myclass)
+
+
+
+class MyNumber:
+    def __iter__(self):
+        self.a = 1
+        return self
+
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x    
+myclass =  MyNumber()
+myiter = iter(myclass)   
+
+print(next(myiter))
+print(next(myiter))
+
+
+class MyNumber:
+    def __iter__(self):
+        self.a = 1
+        return self
+    
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+
+myclass2 = MyNumber()
+myiter2 = iter(myclass2)
+
+
+# print(next(myiter2))
+# print(next(myiter2))
+# print(next(myiter2))
+
+for i in range(16):
+    print(next(myiter2))
+print(next(myiter))
+
+class MyNumber:
+    def __iter__(self):
+        self.a = 1
+        return self
+    
+    def __next__(self):
+        if self.a <= 15:            
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+        
+my_class = MyNumber()
+myiter = iter(my_class)
+
+# print(next(myiter))
+# print(next(myiter))
+# print(next(myiter))
+# print(next(myiter))
+# print(next(myiter))
+for i in range(20):
+    print(next(myiter))
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Drive")
+
+class Boat:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Sail")
+
+class Plane:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Fly")
+
+car1 = Car("Ford", "Mustang")
+boat1 = Boat("Yamaha", "Speed boat")
+plane1 = Plane("Boeing", "747")
+
+for x in (car1, boat1, plane1):
+    x.move()
+
+class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Move")
+
+class Car(Vehicle):
+    pass
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sail")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Fly")
+
+car1 = Car("Ford", "Mustang")        
+boat1 = Boat("Yamaha", "Speed boat")
+plane1 = Plane("Boeing", "747")
+
+for x in (car1, boat1, plane1):
+    x.move()
+
+x = 1
+print(x)
+
+def abc():
+    print(x)
+    global y
+    y = 2
+    print(y)
+
+abc()
+print(y)
+
+
+
+print(x)
+print(x.year)
+print(x.month)
+print(x.day)
+print(x.hour)
+print(x.minute)
+print(x.second)
+print(x.microsecond)
+print()
+print(x.strftime("%A"))
+print()
+
+y = datetime.datetime(2024, 1, 18, 10, 10, 10, 10)
+# print(y)
+
+import datetime
+
+x = datetime.datetime.now()
+print(x.strftime("%a"))
+print(x.strftime("%A"))
+print(x.strftime("%w"))
+print(x.strftime("%b"))
+print(x.strftime("%B"))
+
+import math
+
+x = min(-1, 1, 2, 3)
+y = max(10, 9, 8)
+z = abs(-1)
+p = pow(2, 2)
+
+print(x, y, z, p)
+print(math.sqrt(9))
+print(math.ceil(4.1))
+print(math.floor(4.1))
+print(math.pi)
+
+
+
+import json
+
+x = '{ "name":"John", "age":30, "city":"New York"}'
+
+# print(type(x), x)
+# y = json.loads(x)
+# print(type(y), y)
+# print()
+# print(y["name"])
+
+p = {'name': 'John', 'age': 30, 'city': 'New York'}
+print(type(p), p)
+q = json.dumps(p)
+print(type(q), q)
+
+x = {
+    "name": "anas",
+    "happy": True
+}
+
+print(type(x))
+y = json.dumps(x)
+print(type(y))
+
+
+
+import json
+
+print(json.dumps({"name": "anas", "happy": True}))
+a = [1, 2, 3]
+print(type(a), a)
+b = json.dumps(a)
+print(type(b), b)
+print(json.dumps((1, 2, 3)))
+print(json.dumps("Hello"))
+print(json.dumps(1.1))
+print(json.dumps(True))
+print(json.dumps(None))
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(x, indent=4, sort_keys=True))
+
+import re
+
+txt = "he rain in Spain"
+x = re.search("^he.*Spain$", txt)
+print(txt)
+print(x)
+
+
+# try:
+#     # x = 1
+#     print(x)
+# except NameError:
+#     print("Variable x in not defined")
+# except:
+#     print("Something else went wrong")
+# else:
+#     print("Everything is good")
+# finally:
+#     print("The try-except is finished")
+
+try:
+  f = open("demo.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")
+
+
+x = -1
+
+# if x < 0:
+#     raise Exception("Thankyou")
+
+print()
+print()
+
+x = "thankyou"
+
+if not type(x) is int:
+    raise TypeError("Only integers are allowed")
+
+
+name = input("Enter ur name:")
+print(f"Welcome to the world of happiness {name}.")
+
+
+x = 1
+y = "Hello world - {:.2f}"
+z = y.format(x)
+print(x)
+print(y)
+print(z)
+print()
+p = 1
+q = 2
+r = 3
+
+txt = "I have a {carname}, it is a {model}"
+print(txt)
+print(txt.format(carname = "Ford", model="Mustang"))
+
+
+def myfunction(n):
+    return len(n)
+
+x = map(myfunction, ('apple', 'cherry', 'ball'))
+print(list(x))
+
+def xyz(a, b):
+    return a + b
+
+x = map(xyz, ('apple', 'ball', 'cat'), ('1', '2', '3'))
+print(list(x))
+
+
+ages = [5, 12, 17, 18, 24, 32]
+
+def myfunct(x):
+    if x < 18:
+        return False
+    else:
+        return True
+    
+adults = filter(myfunct, ages)
+print(list(adults))
+
+for x in adults:
+    print(x)
+
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def check_even(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+    
+even_numbers = filter(check_even, nums)
+print(list(even_numbers))
+
+def check_odd(x):
+    if x % 2 == 0:
+        return False
+    else:
+        return True
+    
+odd_numbers = filter(check_odd, nums)
+print(list(odd_numbers))
+
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+def check_vowels(x):
+    if x in vowels:
+        return True
+    else:
+        return False
+    
+vowel_letter = filter(check_vowels, letters)
+print(list(vowel_letter))
+
+def check_consonatns(x):
+    if not x in vowels:
+        return True
+    else:
+        return False
+    
+consonent_letters = filter(check_consonatns, letters)
+print()
+print(list(consonent_letters))
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# odds = filter(lambda x : x % 2 != 0, nums)
+# print(list(odds))
+# evens = filter((lambda x : x % 2 == 0), nums)
+# print(list(evens))
+# multiple_of_3 = filter((lambda x : x % 3 == 0), nums)
+# print(list(multiple_of_3))
+
+square = list(filter((lambda x : x**2), nums))
+print(square)
+
+farenhite = list(map((lambda x : (9 / 5) * x + 32),nums))
+print(farenhite)
+
+words = ["hello", "world", "python", "map"]  
+capitalize_words = list(map(lambda x : x.capitalize(), words))
+print(capitalize_words)
+
+add_5_inline = list(map((lambda x : x + 1), nums))
+print(add_5_inline)
+
+def add_5(x):
+    return x + 1
+
+add_5_outline = list(map(add_5, nums))
+print(add_5_outline)
+
+def modify_value(x):
+    x = x + 10
+    return x
+
+num = 20
+new_num = modify_value(num)
+print(id(num), num)
+print(id(new_num), new_num)
+
+def modify_list(lst1):
+    lst1.append(10)
+    return lst1
+
+list1 = [1, 2, 3]
+new_list = modify_list(list1)
+
+print(id(list1), list1)
+print(id(new_list), new_list)
 """
 
