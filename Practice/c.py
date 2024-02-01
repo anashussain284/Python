@@ -1542,5 +1542,39 @@ new_list = modify_list(list1)
 
 print(id(list1), list1)
 print(id(new_list), new_list)
-"""
 
+path = "/home/anashussain/Python/Practice/demo.txt"
+
+f = open("demo.txt", "r")
+
+# print(f.readline())
+
+f2 = open("abc2.txt", "w")
+
+for data in f:
+    print(data)
+    f2.write(data)
+
+img1 = open("me_hamid.jpeg", "rb")
+img2 = open("image_copy.jpeg", "wb")
+
+for i in img1:
+    img2.write(i)
+
+f = open("demo.txt", "r")
+print(f.read(11))
+
+f = open("123.py", "x")
+
+
+import os
+os.remove("123.py")
+
+f = open("123.py", "x")
+
+if os.path.exists("123.py"):
+    os.remove("123.py")
+else:
+    print("file doesnot exist")
+os.rmdir("tst")
+"""
