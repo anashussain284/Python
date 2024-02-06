@@ -1577,4 +1577,110 @@ if os.path.exists("123.py"):
 else:
     print("file doesnot exist")
 os.rmdir("tst")
+
+
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        print("Woof")
+
+dog1 = Dog()
+dog1.speak()
+
+
+class Bird:
+    def fly(self):
+        print("I can fly")
+
+class Fish:
+    def swim(self):
+        print("I can swim")
+
+class Goat:
+    def walk(self):
+        print("I can walk")        
+
+class FlyingFish(Bird, Fish, Goat):
+    pass 
+
+ff = FlyingFish()
+ff.swim()
+ff.fly()
+ff.walk()
+
+
+class Car:
+    wheels = 4 # public
+    _color = "red" # protected
+    __engine = "v8" # private
+
+class Calculator:
+    def add(self, a, b, c = 0):
+        return a + b + c
+    
+calc = Calculator()
+print(calc.add(1, 2, 3))
+print(calc.add(-1, 0, 1))
+
+class Cat:
+    def __init__(self, name):
+        self.name = name
+        self.breed = "test breed"
+        self.eating_time = [5, 10, 12]
+
+    def hiss(self):
+        print("I'm a hissy cat")
+
+    def sleep(self):
+        self.name = "sleepy " + self.name
+        print(self.name)
+        print("ZZzz")
+
+# cat1 = Cat("Mittu")
+# cat1.hiss()
+# cat1.sleep()
+        
+class HouseKitten(Cat):
+    def play(self):
+        print("I'm playing")
+
+    def sleep2(self):
+        print(f"{self.name} is sleeping")
+
+ht_1 = HouseKitten("Malu")
+ht_1.play()
+ht_1.sleep()
+
+a = 25
+def outer_function():
+    b = 10
+
+    print(f"A from outer_function: {a}")
+    print(f"B from outer_function: {b}")
+
+    def inner_function():
+       nonlocal b
+       b = b + 10
+       print(f"B from inner_function: {b}")
+
+    inner_function()
+print(f"A from withou function: {a}")
+outer_function()
+
+x = [1, 7, 2, -1, 3, 5]
+print(x)
+print(sorted(x))
+print()
+x.sort()
+print(x)
+
+word = ["zebra", "apple", "banana", "cherry", "date", "fig"]
+print(word)
+sorted_words = sorted(word, reverse=True)
+print(sorted_words)
+word.sort()
+print(word)
 """

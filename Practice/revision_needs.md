@@ -15,7 +15,10 @@ pending topics
 8. Python Operator Precedence
 9. Python recursion
 11. Python RegEx
-12. 
+12. Python advanced OOP concepts (https://www.youtube.com/watch?v=dzmYoSzL8ok) (https://www.youtube.com/watch?v=FDdfGFhY9Ms)
+13. Python course from Harvard university (https://www.youtube.com/watch?v=nLRL_NcnK-4&t=25222s)
+14. scope of variable
+15. 
 
 
 pending tasks
