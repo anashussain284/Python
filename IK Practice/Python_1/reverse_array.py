@@ -1,5 +1,6 @@
 nums = [3, 1, 0, -1, 7, 10, 2]
 """
+1.
 def reverse(num):
     result = []
     for i in range(len(nums)-1, -1, -1):
@@ -10,7 +11,7 @@ def reverse(num):
 print(nums)
 reverse(nums)
 
-
+2.
 def reverse(nums):
     print(nums)
     nums.reverse()
@@ -18,6 +19,7 @@ def reverse(nums):
 
 reverse(nums)
 
+3.
 def reverse(nums):
     print(nums)
     nums2 = nums.copy()
@@ -27,6 +29,7 @@ def reverse(nums):
 
 reverse(nums)
 
+4.
 def reverse(nums):
     print(nums)
     rev = nums[::-1]
@@ -34,6 +37,7 @@ def reverse(nums):
 
 reverse(nums)
 
+4.
 def reverse(nums):
     print(nums)
     rev = []
@@ -43,8 +47,9 @@ def reverse(nums):
         rev.append(nums[index])
     print(rev)
 
-reverse(nums)     
-
+reverse(nums)    
+5.
+"""
 def reverse(nums):
     print(nums)
     l = 0
@@ -58,4 +63,3 @@ def reverse(nums):
     print(nums)
 
 reverse(nums)
-"""
