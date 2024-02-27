@@ -378,5 +378,262 @@ print(list3.index("a"))
 print(list1)
 print(list2)
 print(list3)
-"""
 
+# a = (1, 2, 3, 4, 1, 2, 3, 4)
+a = (1, )
+print(type(a), a)
+print()
+print(isinstance(a, tuple))
+print()
+b = tuple((1, 2, 3))
+print(type(b))
+a = tuple(range(6))
+print(a)
+print(a[0])
+print(a[-1])
+print()
+print(a[4:])
+
+a = tuple(range(11))
+print(a)
+b = list(a)
+print(b)
+b[5] = 5.1
+c = tuple(b)
+print(c)
+
+a = list(range(11))
+# print(a)
+b = list(range(11))
+# c = a
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(id(a))
+print(id(b))
+# print(id(c))
+
+a = ("apple", "banana", "cherry")
+print(a)
+b = ("orange", "grapes")
+print(b)
+a += b
+print(a)
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(*green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+a = ("a", "b", "c")
+b = (1, 2, 3)
+c = b * 3
+print(a)
+print(b)
+print(c)
+print()
+print(c.count(3))
+
+a = set(range(5))
+b = {0, 1, 2, 3, 4}
+c = {0, 1, 2, 3, 4}
+d = {0, 1, 2, 3, 4}
+print(id(a), a)
+print(id(b), b)
+print(id(c), c)
+print(id(d), d)
+
+a = {"apple", "banana", "cherry", "apple"}
+a.add("coconut")
+print(a)
+print("a2pple" in a)
+
+a = {1, 2, 3}
+b = {"a", "b", "c"}
+print(a)
+print(b)
+print()
+a.update(b)
+print(a)
+print(b)
+
+a = {"a", "b", "c", "a"}
+print(a)
+a.remove("a")
+print(a)
+
+a = {"a", "b", "c", "a"}
+print(a)
+a.discard("ab")
+print(a)
+
+a = {"a", "b", "c"}
+print(a)
+a.clear()
+print(a)
+
+set1 = {1, 2, 3, 4}
+set2 = {6, 7, 8, 9}
+# set3 = set1.union(set2)
+
+print(set1)
+print(set2)
+# print(set3)
+set1.update(set2)
+print()
+print(set1)
+print(set2)
+
+set1 = {1, 2, 3}
+set2 = {7, 8, 9, 1}
+# set3 = set1.intersection(set2)
+print(f"set1 = {set1}")
+print(f"set2 = {set2}")
+# print(f"set3 = {set3}")
+# set1.intersection_update(set2)
+set2.intersection_update(set1)
+print()
+print(f"set1 = {set1}")
+print(f"set2 = {set2}")
+
+set1 = {1, 2, 3}
+set2 = {7, 8, 9}
+# set3 = set1.symmetric_difference(set2)
+print(f"set1 = {set1}")
+print(f"set2 = {set2}")
+# print(f"set3 = {set3}")
+set1.symmetric_difference_update(set2)
+print()
+print(f"set1 = {set1}")
+print(f"set2 = {set2}")
+
+a = {1, 2, 3}
+# a.add(5)
+# a.clear()
+b = a.copy()
+print(a)
+print(b)
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1.difference(set2)
+print(f"set1 = {set1}")
+print(f"set2 = {set2}")
+print(f"set3 = {set3}")
+
+a = {
+    "name": "HP",
+    "class": 10,
+    "place": "abc",
+    "name":"lenovo",
+    "name2":"lenovo"
+}
+
+# b = {
+#     "name": "Lenovo",
+#     "class": 10,
+#     "place": "abc"
+# }
+print(a)
+print(a["name"])
+print(len(a))
+print(type(a))
+print(id(a))
+b = dict(name="abc", age = 32, country = "India")
+print(id(b), type(b), b)
+print()
+print(b.get("name"))
+
+keys = b.keys()
+print(type(keys), keys)
+
+values = b.values()
+print(type(values), values)
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+keys = car.keys()
+print(type(keys), keys)
+
+values = car.values()
+print(type(values), values)
+
+items = car.items()
+print(type(items), items)
+
+print()
+
+for x in car.items():
+    print(x[0], " = ", x[1])
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+print(car["year"])
+
+car["year"] = 2004
+
+print(car["year"])
+
+# car.update({"year":2024})
+car.update(dict(year=2024))
+
+print(car["year"])
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+print(car)
+car.popitem()
+del car["model"]
+del car
+car.clear()
+print(car)
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+for i in car:
+    print(i)
+
+"""
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}    
+
+# print(myfamily)
+for i in myfamily.values():
+    for j in i.values():
+        print(j)
+
+print()
+print(myfamily["child1"]["name"])        
