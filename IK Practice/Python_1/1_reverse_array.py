@@ -1,4 +1,5 @@
 nums = [3, 1, 0, -1, 7, 10, 2]
+
 """
 1.
 def reverse(num):
@@ -50,16 +51,18 @@ def reverse(nums):
 reverse(nums)    
 5.
 """
-def reverse(nums):
-    print(nums)
-    l = 0
-    r = len(nums) - 1
-    while l < r:
-        tmp = nums[r]
-        nums[r] = nums[l]
-        nums[l] = tmp
-        l += 1
-        r -= 1
-    print(nums)
+# def reverse(nums):
+#     print(nums)
+#     l = 0
+#     r = len(nums) - 1
+#     while l < r:
+#         tmp = nums[r]
+#         nums[r] = nums[l]
+#         nums[l] = tmp
+#         l += 1
+#         r -= 1
+#     print(nums)
 
-reverse(nums)
+# reverse(nums)
+
+

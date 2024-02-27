@@ -56,7 +56,6 @@ val = 3
 pos = 2
 print(ins(nums, val, pos))
 
-
 """
 def ins(nums, val, pos):
     print(nums)
