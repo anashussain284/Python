@@ -667,4 +667,141 @@ print(car)
 
 car.update({"color":"black"})
 print(car)
+
+a = float(input("Enter 1st no: "))
+b = float(input("Enter 2nd no: "))
+
+if a > b:
+    print(f"first number {a} is greatest no")
+elif a < b:
+    print(f"second number {b} is greates no")
+else:
+    print(f"{a} and {b} are same")
+
+i = 5
+
+while i >= 1:
+    print(6 - i)
+    i -= 1
+
+for i in range(11):
+    # print(i)
+    if (i == 3):
+        continue
+
+    if (i == 5):
+        break
+        # pass
+    print(i)
+
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for i in adj:
+    for j in fruits:
+        print(i, j)
+
+def my_function(i):
+    print(f"{i}. Hello")
+
+for i in range(1, 60):
+    my_function(i)
+
+a, b, *c = range(6)
+print(f"a = {a}")
+print(f"b = {b}")
+print(f"c = {c}")
+
+def my_function(*name):
+    print(f"name = {name[0]}")
+
+my_function("Anas", "Hussain", "Aisha")
+
+
+def my_fn(**name):
+    print(f"Name = {name.get('n1')}")
+
+my_fn(n1 = "Anas", n2 = "Hussain", n3 = "Aisha")
+
+def test(name = "Anas"):
+    print(f"Hello {name}")
+
+test("Hussain")
+test("Anas 1")
+test("Aisha")
+test()
+test()
+test()
+
+
+
+def test(no):
+    for i in no:
+        print(f"i = {i}")
+
+test(range(6))
+
+
+def pi():
+    return 3.14
+
+a = pi() + 1.5
+print(a)
+
+
+
+def test(a, /):
+    print(a)
+
+test(1)
+
+
+def test(x):
+    print(x)
+
+test(1)
+
+
+def test(a, b, /, *, c, d):
+    print(a + b + c + d)
+
+test(5, 6, c = 7, d = 8)
+
+def try_rec(k):
+    if (k > 0):
+        result = k + try_rec(k - 1)
+        print(result)
+    else:
+        result = 0
+    # print(f"result = {result}")
+    return 0
+
+print("Recursion example result:\n")
+try_rec(6)
+
+x = lambda a : a + 10
+
+# print(x(5))
+y = lambda a, b : a + b
+print(y(1, 2))
+
+
+def my_fn(n):
+    return lambda a : a * n
+
+my_doubler = my_fn(3)
+
+print(my_doubler(10))
+
+a = [0, 1, 2, 3, 4, 5]
+print(a)
+a.append(6)
+print(a)
+a.pop(2)
+a.insert(2, 2)
+print(a)
+print(a.index(3))
+
+28/02/2024 17/56
 """
