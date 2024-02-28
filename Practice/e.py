@@ -614,7 +614,6 @@ car = {
 for i in car:
     print(i)
 
-"""
 myfamily = {
   "child1" : {
     "name" : "Emil",
@@ -628,12 +627,44 @@ myfamily = {
     "name" : "Linus",
     "year" : 2011
   }
-}    
+}
 
-# print(myfamily)
+a = myfamily.copy()
+
+myfamily.clear()
+
+print(myfamily)
+print(a)
+
 for i in myfamily.values():
     for j in i.values():
         print(j)
 
 print()
-print(myfamily["child1"]["name"])        
+print(myfamily["child1"]["name"])
+
+x = ("key1", "key2", "key3")
+y = "test"
+z = dict.fromkeys(x, y)
+
+print(f"x = {x}, type = {type(x)}")
+print(f"y = {y}, type = {type(y)}")
+print(f"z = {z}, type = {type(z)}")
+print()
+# z.pop("key1")
+z.popitem()
+print(z.get("key1"))
+print(f"z = {z}, type = {type(z)}")
+
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print(car)
+
+car.update({"color":"black"})
+print(car)
+"""
